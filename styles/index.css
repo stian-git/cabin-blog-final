@@ -1,0 +1,104 @@
+.carousel_container {
+    background-color: var(--color_bg, #331707);
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.mobile_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile_nav .nav {
+    width: 50px;
+}
+.latestposts {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.latestposts a {
+    display: contents;
+    color: inherit;
+}
+
+.latestposts h3 {
+    color: var(--color_headertext, #f2d06b);
+    height: 7%;
+}
+.latestposts .tagnames {
+    height: 10%;
+}
+
+.latestposts p {
+    font-size: 0.8em;
+    margin: 10px 0px;
+}
+
+.carousel_container .post {
+    background-color: var(--color_footer, #1e0c01);
+    width: unset;
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--color_cta, #f26513);
+    height: unset;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.carousel_container .nav {
+    align-self: center;
+}
+.post .image {
+    text-align: center;
+}
+
+.post img,
+.post video {
+    width: 65%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.nav .cta {
+    padding: 5px;
+    background-color: var(--color_header, #1e0c01);
+    width: 30px;
+}
+.carousel_container > .nav {
+    display: none;
+}
+
+.latestposts .readmore {
+    color: black;
+    padding: 5px 0px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.excerpt {
+    height: 35%;
+    overflow: hidden;
+}
+
+.nav_infotext {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 0px 10px;
+}
+
+.mobile_nav div {
+    place-self: center;
+}
+
+.fa-solid.fa-spinner {
+    color: var(--color_cta, #f26513);
+    font-size: 4em;
+}

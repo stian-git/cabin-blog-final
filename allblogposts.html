@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Cabin Trips blogs - Read about our trips, experiences and daily-life happenings." />
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+        <link rel="manifest" href="./site.webmanifest" />
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000000" />
+        <meta name="msapplication-TileColor" content="#f2d06b" />
+        <meta name="theme-color" content="#f2d06b" />
+        <!-- Hotjar Tracking Code for https://reverent-morse-b2f618.netlify.app/ -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 2829688, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+        </script>
+        <script src="https://kit.fontawesome.com/c42e915e6a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="styles/allblogposts.css" />
+        <link rel="stylesheet" href="styles/media.css" />
+        <title>Cabin Trips | All blog posts</title>
+    </head>
+    <body>
+        <header></header>
+        <div class="main_container">
+            <h1 class="mobile_header">Blog posts</h1>
+            <aside>
+                <div class="filterbutton_container" aria-label="Show or hide blog search options" title="Show or hide blog search options">
+                    <p class="cta filterbutton" data-showingfilters="false">Show search options <i class="fa-solid fa-angles-down"></i></p>
+                </div>
+                <div class="filters">
+                    <form action="" method="get" class="allfilters">
+                        <div class="search" title="Search field">
+                            <div class="tooltip_container">
+                                <h2><i class="fa-solid fa-magnifying-glass" alt="Magnifying glass for search field"></i>Search</h2>
+                                <span class="tooltip">Search for a post. Then combine the search with filters if needed.</span>
+                            </div>
+                            <input type="text" id="search" aria-label="Search field" />
+                            <button class="cta" id="searchbutton" aria-label="Search button" title="Search button">Search</button>
+                        </div>
+                        <div class="tagheader tooltip_container" title="Filter by hashtags">
+                            <h2><i class="fa-solid fa-hashtag" alt="Hashtag"></i>Tags</h2>
+                            <span class="tooltip">Show posts matching either of your selected tags.</span>
+                        </div>
+                        <div class="tags"></div>
+                    </form>
+                </div>
+                <div class="info">
+                    <p>Use search and filters to find interesting posts.</p>
+                    <p>Click "Read post" to comment the blog post and see media in color.</p>
+                </div>
+            </aside>
+            <main id="main_blogs">
+                <h1 class="desktop_header">Blog posts</h1>
+                <div class="blogs"></div>
+                <section class="pagenav"><p class="cta" data-page="1" data-searchurl="" title="Load more posts">View more posts</p></section>
+            </main>
+        </div>
+        <footer></footer>
+        <script src="js/common.js"></script>
+        <script src="js/allblogposts.js"></script>
+    </body>
+</html>

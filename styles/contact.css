@@ -1,0 +1,69 @@
+.form_container {
+    display: flex;
+    flex-flow: wrap;
+}
+
+button.cta,
+button.disabledbutton {
+    padding: 5px 40px;
+}
+
+button,
+input,
+textarea {
+    display: block;
+}
+
+textarea,
+input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: var(--input_width);
+    line-height: 1.5em;
+    font-size: 0.9em;
+    font-family: var(--font_bodytext), sans-serif;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.modal_messagesent {
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: grid;
+}
+
+.modal_messagesent div {
+    background-color: var(--color_headertext, #f2d06b);
+    color: black;
+    display: inline-flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    padding: 5%;
+}
+
+.modal_messagesent p {
+    margin: 5px 10px;
+}
+
+.modal_messagesent .cta {
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.comment_status {
+    width: var(--input_width);
+}
+
+.fa-spinner.black {
+    color: black;
+}

@@ -1,0 +1,261 @@
+:root {
+    --color_bg: #331707;
+    --color_headertext: #f2d06b;
+    --color_footertext: #f2d06b;
+    --color_navtext: #fff;
+    --color_text: #fff;
+    --color_footer: #1e0c01;
+    --color_header: rgba(30, 12, 1, 0.9);
+    --color_cta: #f26513;
+    --header_height: 100px;
+    --aside_width: 6%;
+    --font_navtext: "Antonio", sans-serif;
+    --font_headertext: "Antonio", sans-serif;
+    --font_bodytext: "Open Sans", sans-serif;
+    --input_width: 70vw;
+}
+/* Import fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@200&family=Open+Sans:wght@500&display=swap");
+
+/* Layout */
+
+body {
+    background-color: var(--color_bg, #331707);
+    color: var(--color_text, #fff);
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+header {
+    background-color: var(--color_header, #1e0c01);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+footer {
+    background-color: var(--color_footer, #1e0c01);
+    z-index: 1;
+    height: 8vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--color_footertext, #f2d06b);
+    font-family: antonio;
+    margin-top: 8em;
+}
+
+img.some-logo {
+    height: 30px;
+    margin: 0px 5px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    margin-top: var(--header_height);
+}
+
+aside {
+    background-color: var(--color_footer, #1e0c01);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* logo */
+.image_logo {
+    margin: 5px 0px 0px 0px;
+    height: 70%;
+}
+
+.logo_burger {
+    display: flex;
+    place-content: space-evenly;
+}
+
+.menu {
+    display: block;
+    align-self: center;
+}
+.burgermenu {
+    margin-left: 40px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.top_nav {
+    display: none;
+    vertical-align: super;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.display_menu {
+    display: block;
+}
+
+.top_nav li {
+    display: inline-block;
+}
+
+.top_nav li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.top_nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    place-content: space-evenly;
+    flex-direction: column;
+}
+
+.top_nav a {
+    color: var(--color_navtext, #fff);
+    font-size: 2em;
+    font-family: var(--font_navtext), sans-serif;
+    padding: 5px 0px;
+}
+
+.top_nav i {
+    width: 40px;
+    display: inline-block;
+}
+.currentpage li {
+    color: var(--color_headertext, #f2d06b);
+}
+.currentpage i {
+    color: var(--color_headertext, #f2d06b);
+}
+
+/* Content */
+
+.fa-spinner {
+    color: black;
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-family: var(--font_headertext), sans-serif;
+    color: var(--color_headertext, #f2d06b);
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.tooltip,
+.desktop_header {
+    display: none;
+}
+.mobile_header {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: var(--font_headertext), sans-serif;
+    color: var(--color_headertext, #f2d06b);
+    margin-top: 2em;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: var(--font_bodytext), sans-serif;
+}
+
+button,
+.cta {
+    padding: 5px 0px;
+    background-color: var(--color_cta, #f26513);
+    font-family: var(--font_headertext), sans-serif;
+    font-size: 1.2em;
+    border: 2px solid var(--color_headertext, #f2d06b);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    color: black;
+}
+.cta:hover {
+    border: 2px solid var(--color_cta, #f26513);
+}
+
+.disabledbutton {
+    mix-blend-mode: luminosity;
+    cursor: default;
+}
+
+main {
+    width: 80vw;
+    justify-self: center;
+    margin-top: var(--header_height);
+}
+
+form {
+    margin-top: 80px;
+    font-family: var(--font_headertext), sans-serif;
+    color: var(--color_headertext, #f2d06b);
+}
+
+.error,
+form .fa-exclamation-circle {
+    color: red;
+}
+
+form .fa-check-circle {
+    color: limegreen;
+}
+
+form .fas,
+form .requirementinfo {
+    float: right;
+}
+
+form .requirementinfo {
+    font-size: 0.8em;
+    display: none;
+}
+
+form .fas {
+    margin-left: 10px;
+    line-height: 1.2em;
+}
+
+.fa-solid {
+    margin: 5px;
+    color: var(--color_cta, #f26513);
+}
+
+.allfilters {
+    margin-top: 0px;
+}
+
+/* Status message on both blogpost and contact pages */
+.comment_status {
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+    padding: 1px 5px;
+    margin-top: 5px;
+}
+
+.success {
+    background-color: green;
+}
