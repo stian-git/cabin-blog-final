@@ -1,67 +1,69 @@
-## Project Exam 1
+# Cabin Blog
 
-## Goal
+![image](https://tekniskpotet.no/img/blog_desktop+mobile.jpg)
 
-To put into practice the skills learned over your first year of studies.
+A social media with user interaction.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+# Table of Contents
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+- [Description](#description)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-### Blog Page
+## Description
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+A blog front-end with content populated from a Wordpress site used as backend CMS. Users can send messages to the blogger which will be stored in Wordpress.
 
-### Blog Specific Page
+Visitors can read and comment on blogposts live, and search and filter blogposts to find interesting posts.
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+Here are some of the features for this project:
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+- Wordpress API-Integration
+- Blog post Navigation
+- Search and filter posts
+- Modal to display enlarged media
+- Repetitive components added though JS
 
-### Contact page
+## Built With
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+You can list a the tech stack that you've used over here
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+- [Wordpress](https://wordpress.org/)
+- [FontAwesome](https://fontawesome.com/)
 
-### WordPress
+## Getting Started
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+You need your own Wordpress-installation to use this with the following plugins:
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
+- [JWT Authentication for WP-API](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/)
+- [Headless Mode](https://wordpress.org/plugins/headless-mode/)
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
+This site is hosted on the following url for testing purposes:
+[https://delightful-bublanina-611d77.netlify.app/](https://delightful-bublanina-611d77.netlify.app/)
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+### Installing
 
-## Level 1 Process
+1. Clone the repo:
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
+```bash
+git clone stian-git/cabin-blog-final
+```
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
+2. Configuration:
 
+Near the top of js/common.js you should change the baseURL-, u- and p-variables to make it work with your own Wordpress.
+
+## Contributing
+
+This was made for a school project so I'm not planning for regular maintenance, but rather use it to show some of my work.
+However I will welcome feedback, suggestions and ideas. Please reach me through the contact information below.
+
+## Contact
+
+The best way to reach me would be through the following sites:
+
+[My Portfolio](https://tekniskpotet.no)
+
+[My LinkedIn page](https://www.linkedin.com/in/stian-martinsen-stormyr-1662a515/)
