@@ -2,7 +2,7 @@
 
 ![image](https://tekniskpotet.no/img/blog_desktop+mobile.jpg)
 
-A social media with user interaction.
+A blog frontend with a headless Wordpress as CMS.
 
 # Table of Contents
 
