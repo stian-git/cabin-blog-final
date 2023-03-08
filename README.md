@@ -28,7 +28,7 @@ Here are some of the features for this project:
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+This project was built using:
 
 - [Wordpress](https://wordpress.org/)
 - [FontAwesome](https://fontawesome.com/)
